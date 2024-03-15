@@ -2,98 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-
-    <div class="container">
-        <img src="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg">
-        <h1>A Believer</h1>
-        <div class="min-con">
-          <p> Web Designer • Frontend Developer </p>
+    <div class="main">
+        <h3 class="heading"><span>Profile </span>Card</h3>
+        <div class="container">
+            <div class="card">
+                <img src="./images/1.png">
+                <div class="details">
+                    <h3>Purnima S Das</h3>
+                    <p>Digital Marketer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href=""><i class="uil uil-twitter-alt"></i></a>
+                        <a href=""><i class="uil uil-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/2.png">
+                <div class="details">
+                    <h3>Koushik Saha</h3>
+                    <p>Programmer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href=""><i class="uil uil-twitter-alt"></i></a>
+                        <a href=""><i class="uil uil-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/3.png">
+                <div class="details">
+                    <h3>Joy Kujur</h3>
+                    <p> Edit and marketing</p>
+                    <div class="social-links">
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href=""><i class="uil uil-twitter-alt"></i></a>
+                        <a href=""><i class="uil uil-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/4.png">
+                <div class="details">
+                    <h3>Sourov Roy</h3>
+                    <p>Graphic Designer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href=""><i class="uil uil-twitter-alt"></i></a>
+                        <a href=""><i class="uil uil-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-      </div>
-
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0%;
-  margin: 0%;
-  font-family: "Poppins", sans-serif;
-}
-body {
-  background-color: rgba(215, 197, 185, 1);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  position: relative;
-  height: 325px;
-  width: 250px;
-  transition: all 1s;
-}
-.container:hover {
-  box-shadow: 15px 15px 47px #020202, -15px -15px 47px #090909;
-  cursor: pointer;
-}
-
-.container > img {
-  height: 100%;
-  width: 100%;
-  clip-path: circle(24.3% at 51% 33%);
-  transition: all 1s;
-}
-
-.container:hover img {
-  clip-path: circle(70.7% at 50% 50%);
-}
-
-.container > h1 {
-  position: absolute;
-  top: 60%;
-  left: 22%;
-  transition: all 100ms;
-}
-.container:hover h1 {
-  visibility: hidden;
-}
-.min-con {
-  position: absolute;
-  top: 0%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  color: #e0e0e0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  visibility: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(247, 247, 247, 0) 0%,
-    rgba(48, 48, 48, 0.205) 73%,
-    rgb(54, 53, 53) 100%
-  );
-  transition: all 100ms;
-}
-.min-con > p {
-  width: 70%;
-  position: relative;
-  bottom: 20px;
-  font-weight:400;
-  text-align: center;
-}
-.container:hover .min-con {
-  visibility: visible;
-}
-
-      </style>
-    
+    </div>
 </body>
 </html>
+
+
+
+
+
