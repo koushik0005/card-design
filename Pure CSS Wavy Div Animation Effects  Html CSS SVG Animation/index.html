@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Wavy Div Animation Effects | Html CSS SVG Animation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>@believer0005</h2><br>
+                <p>Believer Present Pure CSS Wavy Div Animation Effects</p><br>
+                <p>Created by Koushik Saha <br> with A Believer</p>
+            </div>
+        </div>
+    </div>
+
+
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02;0.05;0.02" repeatCount="indefinite"/>
+    
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30"/>
+        </filter>
+    </svg>
+    
+</body>
+</html>
