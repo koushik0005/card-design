@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Product Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="sneaker">
+                <div class="crical"></div>
+                <img src="./img/running_shoes_PNG5816.png" alt="loto">
+            </div>   
+
+            <div class="info">
+                <h1 class="title">Loto ZX</h1><br>
+                <p>FUTUER READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</p><br>
+                <div class="sizes">
+                    <button>39</button>
+                    <button>40</button>
+                    <button>42</button>
+                    <button>44</button>
+                </div>
+                <div class="purchaes">
+                    <button>Purchaes</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script>
+
+        //Movement Animation to happen
+        const card = document.querySelector(".card");
+        const container = document.querySelector(".container");
+
+        //items
+        const title = document.querySelector(".title");
+        const sneaker = document.querySelector(".sneaker img");
+        const purchaes = document.querySelector(".purchaes");
+        const description = document.querySelector(".info p");
+        const sizes = document.querySelector(".sizes");
+
+        //Movement Animation Event
+        container.addEventListener("mousemove", (e)=> {
+            let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        //Animate in
+        container.addEventListener("mouseenter", (e) =>{
+            card.style.transform ="none";
+            //Popout
+            title.style.transform = "translateZ(150px)";
+            sneaker.style.transform = "translateZ(200px) rotateZ(-45deg) "
+            description.style.transform = "translateZ(125px)";
+            sizes.style.transform = "translateZ(100px)";
+            purchaes.style.transform = "translateZ(75px)";
+            
+        });
+        //Animate out
+        container.addEventListener("mouseleave", (e) =>{
+            card.style.transform ="all 0.5s ease";
+            card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+             //Popin
+             title.style.transform = "translateZ(0px)";
+             sneaker.style.transform = "translateZ(0px) rotateZ(0deg) ";
+             description.style.transform = "translateZ(0px)";
+            sizes.style.transform = "translateZ(0px)";
+            purchaes.style.transform = "translateZ(0px)";
+        });
+
+    </script>
+    
+</body>
+</html>
